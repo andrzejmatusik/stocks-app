@@ -31,7 +31,7 @@ const SignUp = (props) => {
         props.signUp(form);
     };
     useEffect(() => {
-        fetch("http://webtask.future-processing.com:8068/stocks")
+        fetch("/stocks")
             .then(res => res.json())
             .then(data => {
                 Object.keys(data.items).map((index) => data.items[index].unit = 0);
