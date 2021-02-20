@@ -25,7 +25,7 @@ const Prices = (props) => {
     };
     useEffect(() => {
         setInterval(function refreshStocks() { 
-            fetch("http://webtask.future-processing.com:8068/stocks")
+            fetch("/stocks")
             .then(res => res.json())
             .then(data => {
                 setStocks([...data.items]);
