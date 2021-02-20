@@ -8,7 +8,7 @@ const Settings = (props) => {
     const [form, setForm] = useState({
         firstName: profile.firstName,
         lastName: profile.lastName,
-        money: profile.money
+        money: 0
     });
     const history = useHistory();
     const handleChange = (e) => {
